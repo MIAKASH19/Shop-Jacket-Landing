@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 600;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+nav{
+    /* background: red; */
+    padding: 0px 5rem;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+nav h1:hover{
+    color: rgb(179, 75, 6);
+}
+nav h2{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav h2 i{
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.heading{
+    /* height: 45%; */
+    width: 100%;
+    /* background-color: red; */
+    padding: 1rem 5rem;
+}
+.heading h1{
+    width: 40%;
+    line-height: 1.1;
+    font-size: 4.5vw;
+    font-weight: 500;
+    letter-spacing: -3px;
+}
+.center-in{
+    /* background: red; */
+    display: flex ;
+    align-items: start;
+    justify-content: space-between;
+}
+.center-in p{
+    width: 28%;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 2;
+    padding: 1.5rem 0rem;
+}
+
+.center-right{
+    /* background: red; */
+    width: 23%;
+}
+.elem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 5px;
+    width: 100%;
+    border-top: 1px solid rgb(172, 165, 165);
+}
+.elem svg{
+    opacity: 0;
+    transition: all .5s cubic-bezier(0.19, 1, 0.22, 1)
+}
+.elem:hover svg{
+    opacity: 1;
+}
+a{
+    text-decoration: none;
+    color: rgb(46, 45, 45);
+}
+.imgdiv{
+    width: 100%;
+    height: 30.5%;
+    overflow: hidden;
+    background-image: url(/OrangeLady.jpg);
+    background-position: 0 20%;
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+    nav{
+        /* background: red; */
+        padding: 0px 1rem;
+        width: 100%;
+        height: 4rem;
+        gap: 1rem;
+    }
+    nav h1{
+        font-size: 11px;
+    }
+    nav h2{
+        width: 7vw;
+        height: 7vw;
+    }
+    nav h2 i{
+        color: white;
+        font-size: 10px;
+    }
+    .heading{
+        /* height: 45%; */
+        width: 100%;
+        /* background-color: red; */
+        padding: 1rem;
+    }
+    .heading h1{
+        width: 100%;
+        font-size: 11vw;
+        font-weight: 400;
+        letter-spacing: -2px;
+    }
+    .center-in{
+        /* background: red; */
+        flex-direction: column;
+    }
+    .center-in p{
+        width: 90%;
+        font-size: 12px;
+        line-height: 1.5;
+        padding: 1.5rem 0rem;
+    }
+    
+    .center-right{
+        /* background: red; */
+        width: 100%;
+        padding-right: .5rem;
+    }
+    .elem{
+        padding: 5px 0;
+        width: 100%;
+    }
+    .elem svg{
+        opacity: 1;
+        width: 10px;
+    }
+    a{
+        font-size: 11px;
+    }
+    .imgdiv{
+        height: 27.2%;
+        background-position: 0 5%;
+    }
+}
